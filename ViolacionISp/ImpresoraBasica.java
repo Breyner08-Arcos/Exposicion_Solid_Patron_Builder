@@ -1,3 +1,4 @@
+package ViolacionISp;
 interface DispositivoMultifuncion {
     void imprimir(String doc);
     void escanear(String destino);

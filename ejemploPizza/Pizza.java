@@ -1,3 +1,4 @@
+package ejemploPizza;
 public class Pizza {
     private String tamaño;
     private String masa;

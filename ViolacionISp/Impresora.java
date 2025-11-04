@@ -1,3 +1,4 @@
+package ViolacionISp;
 interface Impresora {
     void imprimir(String doc);
 }
@@ -18,4 +19,3 @@ class CentroDeCopias implements Impresora, Escaner, Fax {
     public void escanear(String destino) { /* ... */ }
     public void enviarFax(String num) { /* ... */ }
 }
-
