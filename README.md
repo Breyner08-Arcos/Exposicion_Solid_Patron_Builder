@@ -36,16 +36,22 @@ El resultado es un código más frágil, difícil de mantener y menos reutilizab
 
 **Ejemplo: correcto**
 ```java
+class Empleado implements Trabajador, Comedor {
+    @Override
+    public void trabajar() {
+        System.out.println("Empleado trabajando en la oficina...");
+    }
+
+    @Override
+    public void comer() {
+        System.out.println("Empleado comiendo en la cafetería.");
+    }
+}
+
 class Robot implements Trabajador {
     @Override
     public void trabajar() {
         System.out.println("Robot ensamblando piezas...");
-    }
-
-    // ❌ Este método no tiene sentido para un robot, pero está obligado a implementarlo
-    @Override
-    public void comer() {
-        throw new UnsupportedOperationException("Un robot no necesita comer.");
     }
 }
 ```

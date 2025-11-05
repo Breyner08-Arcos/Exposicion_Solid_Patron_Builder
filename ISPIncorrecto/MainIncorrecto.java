@@ -11,7 +11,6 @@ public class MainIncorrecto {
         Robot robot = new Robot();
         robot.trabajar();
 
-        // Este método no tiene sentido, pero la interfaz lo obliga
         try {
             robot.comer();
         } catch (UnsupportedOperationException e) {
